@@ -1,0 +1,39 @@
+{
+  "name": "employee-attendance-backend",
+  "version": "1.0.0",
+  "description": "Employee Attendance System Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seed.js",
+    "check-db": "node src/utils/checkDB.js",
+    "verify": "node src/utils/verifySetup.js",
+    "add-managers": "node src/utils/addManagers.js",
+    "insert-managers": "node src/utils/insertManagers.js",
+    "test-login": "node src/utils/testLogin.js",
+    "add-dummy-data": "node src/utils/addDummyData.js",
+    "reset-dummy-data": "node src/utils/resetDummyData.js"
+  },
+  "keywords": [
+    "attendance",
+    "employee",
+    "system"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
